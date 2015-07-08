@@ -1,0 +1,24 @@
+{
+  "name": "react-native-html-render",
+  "version": "1.0.0",
+  "description": "A html render for react-native",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soliury/react-native-html-render.git"
+  },
+  "keywords": [
+    "react-component",
+    "react-native",
+    "ios"
+  ],
+  "author": "soliury",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soliury/react-native-html-render/issues"
+  },
+  "homepage": "https://github.com/soliury/react-native-html-render#readme"
+}
