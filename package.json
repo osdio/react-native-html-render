@@ -4,7 +4,7 @@
   "description": "A html render for react-native",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "istanbul test _mocha --report html -- test/*.js --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/soliury/react-native-html-render/issues"
   },
-  "homepage": "https://github.com/soliury/react-native-html-render#readme"
+  "homepage": "https://github.com/soliury/react-native-html-render#readme",
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "istanbul": "^0.3.17",
+    "mocha": "^2.2.5"
+  }
 }
