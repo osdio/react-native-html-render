@@ -1,29 +1,29 @@
 {
-  "name": "react-native-html-render",
-  "version": "1.0.0",
-  "description": "A html render for react-native",
-  "main": "index.js",
-  "scripts": {
-    "test": "istanbul test _mocha --report html -- test/*.js --reporter spec"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/soliury/react-native-html-render.git"
-  },
-  "keywords": [
-    "react-component",
-    "react-native",
-    "ios"
-  ],
-  "author": "soliury",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/soliury/react-native-html-render/issues"
-  },
-  "homepage": "https://github.com/soliury/react-native-html-render#readme",
-  "devDependencies": {
-    "chai": "^3.0.0",
-    "istanbul": "^0.3.17",
-    "mocha": "^2.2.5"
-  }
+    "name": "react-native-html-render",
+    "version": "1.0.1",
+    "description": "A html render for react-native",
+    "main": "index.js",
+    "scripts": {
+        "test": "istanbul test _mocha --report html -- test/*.js --reporter spec"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/soliury/react-native-html-render.git"
+    },
+    "keywords": [
+        "react-component",
+        "react-native",
+        "ios"
+    ],
+    "author": "soliury",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/soliury/react-native-html-render/issues"
+    },
+    "homepage": "https://github.com/soliury/react-native-html-render#readme",
+    "devDependencies": {
+        "chai": "^3.0.0",
+        "istanbul": "^0.3.17",
+        "mocha": "^2.2.5"
+    }
 }
