@@ -1,6 +1,6 @@
 {
   "name": "react-native-html-render",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A html render for react-native",
   "main": "index.js",
   "scripts": {
