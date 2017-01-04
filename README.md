@@ -1,9 +1,9 @@
 # react-native-html-render
 > A html render for react-native. But don't **Suitable for** all html. Only **Suitable for** the html generator by markdown with minify.
-> 
+>
 > Now it used by [Noder](https://github.com/soliury/noder-react-native).
 >
-> Be careful to use, the performance is not good. If you want to improve the performance, be free to open a issue or send a PR. 
+> Be careful to use, the performance is not good. If you want to improve the performance, be free to open a issue or send a PR.
 
 
 ## Install
@@ -14,7 +14,7 @@ npm install react-native-html-render
 
 ## Futures
 
-* Support img and code render. 
+* Support img and code render.
 * Can set custom render function and styles.
 * More beautiful native View.
 
@@ -24,87 +24,38 @@ npm install react-native-html-render
 
 ## Example
 
-```
+``` javascript
 var React = require('react-native')
-
 var HtmlRender = require('react-native-html-render')
-
-var window = require('../../util/window')
-var routes = require('../../configs/routes')
-
-
-var { width, height } = window.get()
 
 var {
     Component,
     View,
     Text,
     StyleSheet,
-    Image,
-    LinkingIOS,
-    Navigator
+    Image
     }=React
-
-var contentFontSize = 16
-
 
 var styles = StyleSheet.create({
     img: {
-        width: width - 30,
-        height: width - 30,
-        resizeMode: Image.resizeMode.contain
+        width: 100,
+        height: 100
     }
 })
 
 
 class HtmlContent extends Component {
-    constructor(props) {
-        super(props)
-    }
-
-
-    _onLinkPress(url) {
-        if (/^\/user\/\w*/.test(url)) {
-            let authorName = url.replace(/^\/user\//, '')
-            routes.toUser(this, {
-                userName: authorName
-            })
-        }
-
-        if (/^https?:\/\/.*/.test(url)) {
-            window.link(url)
-        }
-    }
-
 
     _renderNode(node, index, parent, type) {
-        var name = node.name
-        if (node.type == 'block' && type == 'block') {
-            if (name == 'img') {
-                var uri = node.attribs.src;
-                if (/^\/\/dn-cnode\.qbox\.me\/.*/.test(uri)) {
-                    uri = 'https:' + uri
-                }
-                return (
-                    <View
-                        key={index}
-                        style={styles.imgWrapper}>
-                        <Image source={{uri:uri}}
-                               style={styles.img}>
-                        </Image>
-                    </View>
-                )
-            }
-        }
+      //Your code here
     }
 
-
     render() {
+      const sample = "<H5>Hello World</H5>";
         return (
             <HtmlRender
-                value={this.props.content}
-                stylesheet={this.props.style}
-                onLinkPress={this._onLinkPress.bind(this)}
+                value={{sample}}
+                stylesheet={styles}
                 renderNode={this._renderNode}
                 />
         )
@@ -175,7 +126,7 @@ var blockTagArr = ['div', 'p', 'img', 'address',
 
 var inlineTagArr = ['a', 'abbr', 'b', 'big',
     'br', 'cite', 'code', 'em', 'label', 'span', 'strong']
-    
+
 ```
 
 ## FAQ
@@ -185,7 +136,3 @@ More details see [Noder](https://github.com/soliury/noder-react-native).
 ## Licenses
 
 [MIT](https://opensource.org/licenses/MIT)
-
-
-
-
