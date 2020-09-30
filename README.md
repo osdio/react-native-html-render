@@ -133,6 +133,8 @@ var inlineTagArr = ['a', 'abbr', 'b', 'big',
 
 More details see [Noder](https://github.com/soliury/noder-react-native).
 
+Thank You!!
+
 ## Licenses
 
 [MIT](https://opensource.org/licenses/MIT)
