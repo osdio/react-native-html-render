@@ -5,7 +5,7 @@
 >
 > Be careful to use, the performance is not good. If you want to improve the performance, be free to open a issue or send a PR.
 
-
+// please change all the var into let its new future of js 
 ## Install
 
 ```
