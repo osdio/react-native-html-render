@@ -1,8 +1,8 @@
 require('mocha')
 
-var chai = require('chai')
-    , expect = chai.expect
-    , should = chai.should()
+var chai= require('chai')
+    , expect= chai.expect
+    , should= chai.should()
 
 delete require.cache[require.resolve('../lib/htmlParse')]
 
