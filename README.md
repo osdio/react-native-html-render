@@ -66,7 +66,7 @@ class HtmlContent extends Component {
 module.exports = HtmlContent
 ```
 
-## API
+## APIs
 
 ### `value`
 
