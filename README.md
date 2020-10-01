@@ -1,4 +1,4 @@
-# react-native-html-render
+# React-Native-Html-Render
 > A html render for react-native. But don't **Suitable for** all html. Only **Suitable for** the html generator by markdown with minify.
 >
 > Now it used by [Noder](https://github.com/soliury/noder-react-native).
