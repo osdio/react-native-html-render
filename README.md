@@ -9,13 +9,13 @@
 ## Install
 
 ```
-npm install react-native-html-render
+npm i react-native-html-render
 ```
 
 ## Futures
 
-* Support img and code render.
-* Can set custom render function and styles.
+* Support image and code render.
+* Set custom render function and styles.
 * More beautiful native View.
 
 ## Demo
@@ -115,7 +115,7 @@ or If the node is not a text node:
 
 **type**: Only two types: `block` or `inline`.
 
-Mor details:
+More details:
 
 ```
 
@@ -133,6 +133,6 @@ var inlineTagArr = ['a', 'abbr', 'b', 'big',
 
 More details see [Noder](https://github.com/soliury/noder-react-native).
 
-## Licenses
+## Licenses authentication
 
 [MIT](https://opensource.org/licenses/MIT)
