@@ -6,7 +6,7 @@
 > Be careful to use, the performance is not good. If you want to improve the performance, be free to open a issue or send a PR.
 
 
-## Install
+## Install--
 
 ```
 npm install react-native-html-render
